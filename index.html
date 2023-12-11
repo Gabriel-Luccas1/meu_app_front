@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Projeto</title>
+</head>
+
+<body>
+     <!-- Cabeçalho de informações do sistema -->
+    <header>
+        <div class="title">
+            <h2>Planejamento Semanal</h2>
+        </div>
+        <div class="banner">
+            <img src="c:\Users\bielu\Downloads\Design sem nome.png"
+                alt="y">
+        </div>
+    </header>
+
+     <!-- Opções para adicionar um novo item -->
+    <section class="newItem">
+        <input type="text" id="newEncarregado" placeholder="Adicionar encarregado responsável:">
+        <input type="text" id="newEquipe" placeholder="Equipe:">
+        <input type="text" id="newFuncao" placeholder="Função:">
+        <input type="text" id="newServico_local" placeholder="Serviço e Local:">
+        <span onclick="newItem()" class="addBtn">Adicionar</span>
+    </section>
+
+    <!-- Filtro com items existentes -->
+    <div class="input-container">
+    <div>Filtro</div>
+    <input id="input-busca" type="text" class="form-control mt-3 mb-3" placeholder="Filtre por uma informação pertinente da tabela:">
+    </div>
+    
+    <!-- Tabela com items existentes -->
+    <section class="items">
+        <table id="myTable">
+            <tr>
+                <th>Encarregado</th>
+                <th>Equipe</th>
+                <th>Função</th>
+                <th>Serviço e Local</th>
+                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+            </tr>
+        </table>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
+
+
